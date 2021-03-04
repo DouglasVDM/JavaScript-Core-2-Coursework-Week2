@@ -6,7 +6,7 @@ function highlightWords(paragraph, colours) {
   targetElement.appendChild(selectElement);
   
   let loremArray = paragraph.split(' ');
-  console.log(loremArray);
+  console.log('lorem', loremArray);
 
   loremArray.forEach(element => {
     
