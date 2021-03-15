@@ -3,6 +3,9 @@ function todoList(todos) {
   const targetDiv = document.getElementById('content');
   // console.log('this is my target', targetDiv);
 
+  let h1Element = document.createElement('h1')
+  h1Element.innerText = 'List of Todos';
+
   let ulForList = document.createElement('ul');
   // console.log('This is my ul', ulForList);
 
@@ -23,6 +26,7 @@ function todoList(todos) {
       }
     }
     ulForList.appendChild(liForItems);
+    targetDiv.appendChild(h1Element);
     targetDiv.appendChild(ulForList);
   });
 
