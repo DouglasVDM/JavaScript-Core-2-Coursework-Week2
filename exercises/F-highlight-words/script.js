@@ -16,9 +16,11 @@ function highlightWords(paragraph, colours) {
     spanElement.addEventListener('click', getValue);
     function getValue() {
       selectElement.value;
-      console.log(spanElement);
     }
     
+    console.log('span element', spanElement);
+    console.log('value of select item', selectElement.value);
+
     let paragraphElement = document.createElement('p');
     
     let optionElement = document.createElement('option');
