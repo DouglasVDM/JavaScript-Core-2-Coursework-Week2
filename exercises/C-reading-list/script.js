@@ -32,9 +32,9 @@ function readingList(books) {
     imageItem.style.height = 'auto';
 
     // set background color to update on boolean.
-    if (book.alreadyRead === true) {
+    if (book.alreadyRead) {
       listedItem.style.backgroundColor = 'green';      
-    } else if (book.alreadyRead === false) {
+    } else {
       listedItem.style.backgroundColor = 'red';            
     }
     
