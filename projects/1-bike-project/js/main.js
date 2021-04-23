@@ -68,9 +68,9 @@ const textInput = document.getElementById("example-text-input");
 const describeInput = document.getElementById("exampleTextarea");
 
 //  When you click the submit button: The input fields will be checked.
-submitButton.addEventListener('click', required);
+submitButton.addEventListener('click', inputFieldCheck);
     
-function required() {
+function inputFieldCheck() {
   //  Storing the Input values in Variables
   let emptyEmail = emailField.value;
   let emptyText = textInput.value;
