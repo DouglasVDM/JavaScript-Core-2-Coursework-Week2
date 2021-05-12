@@ -33,7 +33,7 @@
                           <i class="fa fa-trash" aria-hidden="true"></i>
                       </span>
                   </li>
-                  </ul>
+                </ul>
               </div>
               <div class="col-sm">
                 <div class="card">
@@ -46,7 +46,9 @@
                               <input class="form-control" id="todoInput" placeholder="New todo...">
                             </div>
                             <div class="col-auto">
-                              <button onclick="addNewTodo(event)" class="btn btn-primary mb-3">Add Todo</button>
+                              <button id="btn-add" class="btn btn-primary mb-3">Add Todo</button>
+                            <div class="col-auto">
+                              <button id="btn-remove" class="btn btn-danger mb-3">Remove Todo</button>
                             </div>
                           </form>
                     </div>
@@ -60,3 +62,24 @@
 
 <script src="script.js"></script>
 </html>
+
+<!-- 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="container">
+        <input id="inputField" type="text"><button id="addToDo">+</button>
+        <div class="to-dos" id="toDoContainer">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+ -->
