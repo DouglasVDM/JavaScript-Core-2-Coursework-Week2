@@ -75,19 +75,24 @@ function inputFieldCheck() {
   let emptyEmail = emailField.value;
   let emptyText = textInput.value;
   let emptyDescribe = describeInput.value;
+  const emptyColour = "red";
 
-    if (emptyEmail === "" || emptyText === "" || emptyDescribe === "") {
+    if (emptyEmail === "") {
       // If email, text and describe field is empty, change background colour to red.
-      const emptyColour = "red";
       emailField.style.background = emptyColour;
-      textInput.style.background = emptyColour;
+      alert("Oops, you didn't give your email address.")
+    } if (emptyText === "") {
+      (textInput.style.background = emptyColour);
+      alert("Oops, you didn't give your name.")
+    } if (emptyDescribe === "") {
       describeInput.style.background = emptyColour;
-      alert("Oops, you didn't complete the form.")
-    } else {
+      alert("Oops, you didn't describe yourself.")
+    } else {      
       alert("Thank you for filling out the form");
-      //  Setting the text and describe field to blank.
+      //  Setting the fields to blank.
       emailField.value = "";
       textInput.value = "";
       describeInput.value = "";      
     }
 }
+// event.preventDefault();
